@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Andini Aullia - Pelajar AKL</title>
+    <!-- Memuat Tailwind CSS untuk styling modern dan responsif -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Konfigurasi Tailwind untuk mendefinisikan skema warna ungu
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Palet ungu kustom
+                        'ungu-gelap': '#4c1d95', // Violet-800
+                        'ungu-utama': '#6d28d9', // Violet-700
+                        'ungu-terang': '#ede9fe', // Violet-100
+                        'latar': '#f9fafb', // Gray-50
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Pengaturan Font Inter -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    </style>
+</head>
+<body class="bg-latar font-sans antialiased p-4 sm:p-8">
+
+    <!-- Kontainer Pusat: Terpusat dan memiliki bayangan -->
+    <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100">
+
+        <!-- Bagian Header Utama (Banner) -->
+        <header class="bg-ungu-gelap text-white p-8 sm:p-12 text-center relative">
+            
+            <!-- Elemen Dekoratif (Opsional, untuk menambahkan sentuhan desain) -->
+            <div class="absolute inset-0 bg-gradient-to-br from-ungu-gelap to-ungu-utama opacity-90"></div>
+            
+            <div class="relative z-10">
+                <!-- Placeholder Foto Profil -->
+                <div class="w-32 h-32 bg-ungu-utama border-4 border-white rounded-full mx-auto mb-4 flex items-center justify-center text-5xl font-extrabold shadow-xl">
+                    A A
+                </div>
+                
+                <h1 class="text-4xl sm:text-5xl font-black mb-1 leading-tight">ANDINI AULLIA</h1>
+                <p class="text-xl sm:text-2xl font-light mt-1">
+                    Pelajar | Akuntansi Keuangan Lembaga
+                </p>
+            </div>
+        </header>
+
+        <!-- Bagian Isi Utama -->
+        <main class="p-6 sm:p-10">
+
+            <!-- Ringkasan Profil Singkat -->
+            <section id="ringkasan" class="mb-10 p-6 bg-ungu-terang rounded-2xl shadow-inner border-l-4 border-ungu-utama">
+                <h2 class="text-2xl font-bold text-ungu-gelap mb-3">Selamat Datang di Portfolio Saya</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Saya Andini Aullia, seorang pelajar yang berdedikasi tinggi di bidang Akuntansi Keuangan Lembaga (AKL). 
+                    Saya bersemangat untuk mempelajari implementasi praktis dari ilmu akuntansi dan siap berkontribusi dalam lingkungan kerja yang profesional. 
+                    Saya memiliki dasar yang kuat dalam pembukuan dan analisis laporan keuangan.
+                </p>
+                <div class="mt-4 text-right">
+                     <a href="#kontak" class="inline-flex items-center justify-center px-4 py-2 border border-ungu-utama text-sm font-medium rounded-full text-ungu-utama bg-white hover:bg-ungu-terang transition duration-300">
+                        Lihat Kontak Saya
+                    </a>
+                </div>
+            </section>
+
+            <!-- Riwayat Pendidikan (Timeline Style) -->
+            <section id="pendidikan" class="mb-12">
+                <h2 class="text-3xl font-extrabold text-gray-800 mb-6 border-b-2 border-ungu-utama pb-2">Riwayat Pendidikan</h2>
+
+                <!-- Kontainer Timeline Fleksibel -->
+                <div class="space-y-6 relative pl-4 md:pl-0">
+                    <!-- Garis Vertikal (Hanya untuk tampilan desktop) -->
+                    <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-ungu-terang"></div>
+
+                    <!-- Entri 1: SMK -->
+                    <div class="flex flex-col md:flex-row md:justify-center relative">
+                        <!-- Indikator Lingkaran -->
+                        <div class="absolute md:relative md:w-1/2 flex justify-start md:justify-end items-start md:items-center">
+                            <div class="md:hidden absolute -left-4 top-1 w-3 h-3 bg-ungu-utama rounded-full border-2 border-white shadow-md"></div>
+                        </div>
+
+                        <div class="md:w-1/2 md:pr-10">
+                            <!-- Konten Kartu (Kiri pada Desktop, Penuh pada Mobile) -->
+                            <div class="p-5 bg-ungu-terang rounded-xl shadow-md transition duration-300 hover:shadow-xl hover:scale-[1.02] border-l-4 border-ungu-utama md:border-l-0 md:text-right">
+                                <p class="text-sm font-semibold text-ungu-gelap">2021 - Sekarang</p>
+                                <h3 class="text-xl font-bold text-ungu-utama mt-1">SMK Dewi Sartika</h3>
+                                <p class="text-lg font-medium text-gray-800">Jurusan Akuntansi Keuangan Lembaga (AKL)</p>
+                                <p class="text-sm text-gray-600 mt-2">Mempelajari secara mendalam siklus akuntansi, penyusunan laporan keuangan, dan praktik perpajakan dasar.</p>
+                            </div>
+                        </div>
+
+                        <!-- Spacer atau Titik Tengah (Hanya untuk Desktop) -->
+                        <div class="hidden md:flex items-center justify-center w-8 h-8 bg-ungu-utama rounded-full border-4 border-white absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 shadow-xl"></div>
+                        
+                        <div class="hidden md:block md:w-1/2">
+                            <!-- Kosong di sisi kanan untuk SMK -->
+                        </div>
+                    </div>
+
+                    <!-- Entri 2: SMP (Contoh) -->
+                     <div class="flex flex-col md:flex-row md:justify-center relative">
+                        <!-- Indikator Lingkaran -->
+                        <div class="absolute md:relative md:w-1/2 flex justify-start md:justify-end items-start md:items-center">
+                            <div class="md:hidden absolute -left-4 top-1 w-3 h-3 bg-gray-400 rounded-full border-2 border-white shadow-md"></div>
+                        </div>
+
+                        <div class="hidden md:block md:w-1/2">
+                            <!-- Kosong di sisi kiri untuk SMP -->
+                        </div>
+
+                        <div class="md:w-1/2 md:pl-10">
+                            <!-- Konten Kartu (Kanan pada Desktop, Penuh pada Mobile) -->
+                            <div class="p-5 bg-gray-100 rounded-xl shadow-md transition duration-300 hover:shadow-xl hover:scale-[1.02] border-l-4 border-gray-400 md:border-l-0 md:text-left">
+                                <p class="text-sm font-semibold text-gray-500">2018 - 2021</p>
+                                <h3 class="text-xl font-bold text-gray-700 mt-1">Sekolah Menengah Pertama [Contoh Nama]</h3>
+                                <p class="text-lg font-medium text-gray-800">Lulusan dengan fokus umum</p>
+                                <p class="text-sm text-gray-600 mt-2">Membentuk dasar kemampuan logika dan adaptasi yang kuat.</p>
+                            </div>
+                        </div>
+
+                        <!-- Spacer atau Titik Tengah (Hanya untuk Desktop) -->
+                        <div class="hidden md:flex items-center justify-center w-8 h-8 bg-gray-400 rounded-full border-4 border-white absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 shadow-xl"></div>
+                    </div>
+                    
+                </div>
+            </section>
+            
+            <!-- Keterampilan dan Alat -->
+            <section id="keterampilan" class="mb-12">
+                <h2 class="text-3xl font-extrabold text-gray-800 mb-6 border-b-2 border-ungu-utama pb-2">Keterampilan (Skills)</h2>
+                
+                <div class="flex flex-wrap gap-4">
+                    <!-- Keterampilan Keras (Hard Skills) -->
+                    <span class="px-4 py-2 bg-ungu-utama text-white text-base font-semibold rounded-lg shadow-lg">Laporan Keuangan</span>
+                    <span class="px-4 py-2 bg-ungu-utama text-white text-base font-semibold rounded-lg shadow-lg">Ms. Excel (Lanjutan)</span>
+                    <span class="px-4 py-2 bg-ungu-utama text-white text-base font-semibold rounded-lg shadow-lg">Jurnal & Pembukuan</span>
+                    <span class="px-4 py-2 bg-ungu-utama text-white text-base font-semibold rounded-lg shadow-lg">Pengarsipan Dokumen</span>
+
+                    <!-- Keterampilan Lunak (Soft Skills) -->
+                    <span class="px-4 py-2 bg-gray-200 text-gray-800 text-base font-semibold rounded-lg shadow-md">Komunikasi Efektif</span>
+                    <span class="px-4 py-2 bg-gray-200 text-gray-800 text-base font-semibold rounded-lg shadow-md">Teliti & Detail</span>
+                    <span class="px-4 py-2 bg-gray-200 text-gray-800 text-base font-semibold rounded-lg shadow-md">Adaptasi Cepat</span>
+                </div>
+            </section>
+
+            <!-- Kontak dan Jaringan -->
+            <section id="kontak" class="mb-4">
+                <h2 class="text-3xl font-extrabold text-gray-800 mb-6 border-b-2 border-ungu-utama pb-2">Hubungi Saya</h2>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <!-- Kartu Email -->
+                    <div class="p-5 bg-ungu-terang rounded-xl shadow-md hover:bg-ungu-terang/70 transition duration-300">
+                        <p class="text-sm font-medium text-gray-600">Email</p>
+                        <a href="mailto:andini.aullia@example.com" class="text-xl font-bold text-ungu-utama hover:underline">andini.aullia@example.com</a>
+                    </div>
+                    
+                    <!-- Kartu LinkedIn/Social Media -->
+                    <div class="p-5 bg-gray-100 rounded-xl shadow-md hover:bg-gray-200 transition duration-300">
+                        <p class="text-sm font-medium text-gray-600">LinkedIn/Portofolio Lain</p>
+                        <a href="#" class="text-xl font-bold text-gray-700 hover:underline">/AndiniAullia</a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-ungu-gelap text-white p-6 text-center text-sm rounded-b-3xl">
+            <p>Portfolio Digital Andini Aullia | Pelajar SMK Dewi Sartika</p>
+            <p class="mt-2 opacity-80">Siap untuk kesempatan belajar dan berkarir.</p>
+        </footer>
+    </div>
+</body>
+</html>
+
